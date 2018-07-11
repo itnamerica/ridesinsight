@@ -65,97 +65,37 @@
         <img ng-src="{{assetsPath}}/images/header-top-6.png" style="width:100%">
         <!-- Brand and toggle get grouped for better mobile display -->
         
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-left:-50%">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" ui-sref="home"><img ng-src="{{assetsPath}}/images/custom_logo.png" alt="main logo"/></a> -->
-        </div>
+        <!-- <div class="navbar-header">
+        </div> -->
 
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse ta-center" id="bs-example-navbar-collapse-1" style="margin-top:-9%">
       
           <ul class="nav navbar-nav">
             
             <li>
-              <a ui-sref="home"><span class="glyphicon glyphicon-home"></span> 
-                HOME
-              </a>
-            </li>
-            
-            <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-info-sign"></span> 
-                ABOUT US
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a ui-sref="what-we-do">What We Do</a></li>
-                <li><a ui-sref="organization">Our Organization</a></li>
-                <li><a ui-sref="faces">Faces of our Members</a></li>
-                <li><a ui-sref="faq">FAQ</a></li>
-                <!-- <li><a ui-sref="rider-stories">Rider Stories</a></li> -->
-                <li><a ui-sref="news">News</a></li>
-                <li><a href="http://blog.itnamerica.org/" target="_blank">Blog</a></li>
-                <li role="separator" class="divider"></li>
-                  <li><a ui-sref="contact">Contact us</a></li>
-              </ul>
-            </li>
-            
-            <!-- <li>
-              <a ui-sref="news"><i class="fa fa-newspaper"></i> 
-                NEWS
-              </a>
-            </li>
-            <li>
-              <a ui-sref="contact"><span class="glyphicon glyphicon-envelope"></span> 
-                CONTACT
-              </a>
-            </li> -->
-          
-            <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-car"></i>
-                RIDE WITH US
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a ui-sref="become-member">Become a Member</a></li>
-                <li><a style="margin-left:10%" ui-sref="member-app">Online Member Application</a></li>
-                <li><a ui-sref="volunteer-to-drive">Volunteer to Drive</a></li>
-                <li><a style="margin-left:10%" ui-sref="volunteer-app">Online Volunteer Application</a></li>
-                <li><a ui-sref="non-rider-member">Non-Rider Member Application</a></li>
-                <li><a ui-sref="family">Family Involvement</a></li>
-                <li><a ui-sref="member-programs">Member Programs</a></li>
-                <li><a ui-sref="pay-online">Pay Online</a></li>
-              </ul>
-            </li>
-            
-            <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-heart"></span> 
-                WAYS TO GIVE
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a ui-sref="donate">Donate</a></li>
-                <li><a ui-sref="corporate">Corporate Partnership</a></li>
-                <li><a ui-sref="volunteer-to-drive">Volunteer to Drive</a></li>
-              </ul>
+              <a ui-sref="home">HOME  &nbsp;&nbsp;  | </a>
             </li>
             
             <li>
-              <a ui-sref="volunteer-to-drive"><i class="fa fa-hand-paper-o"></i>
-                VOLUNTEER TO DRIVE
-              </a>
+              <a href="http://blog.ridesinsight.org/" target="_blank">BLOG  &nbsp;&nbsp;  | </a>
             </li>
             
             <li>
-              <a ui-sref="pay-online"><span class="glyphicon glyphicon-usd"></span> 
-                MAKE A PAYMENT
-              </a>
+              <a ui-sref="about">ABOUT  &nbsp;&nbsp;  | </a>
             </li>
           
+            <li>
+              <a ui-sref="what-is-itn">WHAT IS ITN?  &nbsp;&nbsp;  | </a>
+            </li>
+            
+            <li>
+              <a ui-sref="why-regeneron">WHY REGENERON?  &nbsp;&nbsp;  | </a>
+            </li>
+            
+            <li>
+              <a ui-sref="contact">CONTACT US  &nbsp;&nbsp;  | </a>
+            </li>
             
           </ul>
         </div>
@@ -163,7 +103,7 @@
       </div><!-- /.container-fluid -->
       
       <!--ZOOM BUTTONS-->
-      <span style="margin-left:90%;position:absolute;margin-top:-100px !important;">
+      <span style="margin-left:90%;position:absolute;margin-top:-220px !important;">
         <img ng-src="{{assetsPath}}/images/icons/resize-large.png"/ ng-click="resizeText(0.1)">
         <img ng-src="{{assetsPath}}/images/icons/resize-default.jpg" ng-click="resizeText()"/>
         <img ng-src="{{assetsPath}}/images/icons/resize-small.png" ng-click="resizeText(-0.1)"/>
