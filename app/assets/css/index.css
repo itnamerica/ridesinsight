@@ -25,7 +25,8 @@ body {
 }
 
 .navbar.navbar-default {
-  background-color: #99ccff;
+  /* background-color: #99ccff; */
+  /* background-image: #fff url('../images/header-top-2.jpg') no-repeat 0 0; */
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
