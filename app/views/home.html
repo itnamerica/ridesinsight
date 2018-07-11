@@ -1,15 +1,15 @@
 <div class="homepage" ui-view>
 
-<div class="jumbotron section sponsors" style="background:pink">
+<div class="jumbotron section sponsors" style="background:white">
   <div class="container section-content">
-    <div class="row">
-      <div class="col-sm-4">
+    <div class="row" style="margin-left:40%">
+      <div class="col-md-4">
         <img ng-src="{{assetsPath}}/images/itnamerica.png" style="width:200px">
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <img src="http://blog.ridesinsight.org/wp-content/uploads/2018/06/regeneron_logo.jpg"/>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <a ng-click="translate('spanish')">Español</a>
       </div>
     </div>
@@ -26,7 +26,7 @@
         <p>FIND TRANSPORTATION</p>
         <p>Search our database of transportation programs</p>
         
-        <form name="itnForm" novalidate ng-submit="searchPrograms()" role="search programs" ng-model="formData" style="background:white;color:black;float:left;padding:5%">
+        <form name="itnForm" novalidate ng-submit="searchPrograms()" role="search programs" ng-model="formData" style="background:white;color:black;float:left;padding:5%;padding-bottom:25%;margin;auto;float:none">
           
           <div class="form-group" ng-class="{ 'has-error' : itnForm.stateZip.$invalid && !itnForm.stateZip.$pristine }">
             <input type="text" class="form-control" style="font-style:italic" id="stateZip" name="stateZip" placeholder="State or Zip Code" ng-model="formData.stateZip" required>
@@ -38,11 +38,11 @@
             <span ng-if="itnForm.regionCounty.$error.required && !itnForm.regionCounty.$pristine" class="help-block">{{errorMessages.required}}</span>
           </div>
           
-          <input type="submit" id="submit" class="btn btn-lg btn-primary pull-right itn-green-bg" value="Search" style="margin-left:2%;margin-top:10px">
+          <input type="submit" id="submit" class="btn btn-lg btn-primary pull-right itn-green-bg" value="Search >" style="margin-left:2%;margin-top:10px">
         </form>
         
-        <div style="float:left;margin-top:20px">
-        <p style="font-size:20px">Or call us toll free for assistance<br>
+        <div style="float:left;margin-top:30px">
+        <p style="font-size:25px">Or call us toll free for assistance<br>
           1-855-607-4337</p>
         </div>
 
@@ -60,36 +60,13 @@
   </div><!--container-->
 </div><!--jumbo-->
 
-<div class="jumbotron section huff-post"  style="background:pink">
+<div class="jumbotron section huff-post mb-25"  style="background:white">
   <div class="container ta-center">
     <p>As featured in</p>
     <img ng-src="{{assetsPath}}/images/huffington_post.png">
   </div>
 </div>
 
-
-<!-- 
-<div class="jumbotron section rider-stories">
-  <div class="container section-content">
-    <h1>Rider Stories</h1>
-      <div class="col-lg-5 rider-stories-text">            
-        <h4>Ellie wants to know how much she should tip the driver, who says "No thank you. You owe me nothing." <br>
-        Initially Ellie tries to argue because she just tipped the "girl" who did her hair, but the driver reassures her that no tip is required.</h4>
-        <h5>-Written by Nancy McCormick <br>
-        (ITNCoastalCT)<h5>
-        <p><a ui-sref="rider-stories" class="btn btn-primary btn-lg mt-25">READ MORE</a></p>
-      </div>
-      <div class="col-lg-5 rider-stories-text">
-        <h4>Recently, ITNMontereyCounty had a member sign on who needed the service only for a couple of months while he recovered from open heart surgery. <br>
-        Robert needed us three times a week to get to and from his cardiac rehab appointments. Though this was a temporary thing for him, he was moved by how much it impacted his life.</h4>
-          <h5>-Written by Samantha Kelley <br>
-        (ITNMontereyCounty)</h5>
-        <p>
-          <a ui-sref="rider-stories" class="btn btn-primary btn-lg mt-25">READ MORE</a>
-        </p>
-      </div>
-  </div>
-</div> -->
 
 
 </div><!--home-->
