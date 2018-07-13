@@ -110,13 +110,28 @@
         </div>
       </div>
       
-      <!--ZOOM BUTTONS-->
-      <!-- <span style="margin-left:90%;position:absolute;"> -->
-      <span style="margin-left:78%;margin-top:3%;position:absolute">
-        <img ng-src="{{assetsPath}}/images/icons/resize-large.png"/ ng-click="resizeText(0.1)">
-        <img ng-src="{{assetsPath}}/images/icons/resize-default.jpg" ng-click="resizeText()"/>
-        <img ng-src="{{assetsPath}}/images/icons/resize-small.png" ng-click="resizeText(-0.1)"/>
-      </span>
+      
+      <div class="jumbotron section sponsors" style="background:white;margin-top:-2%;margin-left:39%;width:60%">
+        <div class="container section-content">
+          <!-- <div class="row" style="margin-left:40%"> -->
+          <div class="row">
+            <div class="col-xs-4">
+              <img ng-src="{{assetsPath}}/images/itnamerica.png" style="width:11vw">
+            </div>
+            <div class="col-xs-4">
+              <img src="http://blog.ridesinsight.org/wp-content/uploads/2018/06/regeneron_logo.jpg" style="width:11vw"/>
+            </div>
+            <div class="col-xs-4">
+              <span>
+                <img ng-src="{{assetsPath}}/images/icons/resize-large.png"/ ng-click="resizeText(0.1)">
+                <img ng-src="{{assetsPath}}/images/icons/resize-default.jpg" ng-click="resizeText()"/>
+                <img ng-src="{{assetsPath}}/images/icons/resize-small.png" ng-click="resizeText(-0.1)"/>
+              </span> <br>
+              <a ng-click="translate('spanish')">Español</a>
+            </div>
+          </div>
+        </div>
+      </div>
       
     </nav>
 
