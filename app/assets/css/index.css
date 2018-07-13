@@ -47,6 +47,7 @@ nav .navbar-header img {
 }
 nav .navbar-nav {
   margin-right: 2%;
+  margin-left: 17%;
 }
 nav .navbar-nav li:hover {
   background: #399eaa;
@@ -1784,20 +1785,41 @@ h2,h3 {line-height:1.7}
 
 /* RESPONSIVE */
 
+@media (max-width: 1600px) {
+  nav .navbar-nav {
+    margin-top:-6px;
+  }
+}
+
+@media (max-width: 1445px) {
+  .social {
+    margin-top: -13%;
+  }
+  .sponsor {
+    margin-top: -6%;
+  }
+}
 
 @media (max-width: 1371px) {
   .social {
-    /* margin-top: -135px; */
     width: 50%;
+  }
+}
+
+@media (max-width: 1289px) {
+  nav .navbar-nav {
+    width:70%
   }
 }
 
 @media (max-width: 1209px) {
   .social{
-    /* margin-top: -130px; */
     margin-top:-10%;
     margin-left: 40%;
     width: 60%;
+  }
+  .sponsors {
+    margin-bottom: -5% !important;
   }
 }
 
